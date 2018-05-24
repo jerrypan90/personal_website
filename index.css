@@ -6,8 +6,9 @@ body {
     width: 100vw;
 }
 .home {
-  background: url("background.jpeg") no-repeat center center fixed;
+  background: url("asset/background.jpeg") no-repeat center center fixed;
   background-size: cover;
+  text-align: center;
 }
 .about {
   background-color: rgb(245, 243, 240);
@@ -29,20 +30,38 @@ body {
   height: 20vh;
   width: 100vw;
 }
-#homeContent {
-  text-align: center;
-  position: relative;
-  top: 50%;
-}
 #homeTitle, #projectTitle, #contactTitle {
   margin-top: 0;
+  margin-bottom: 10px;
 }
-#contactTitle {
-  padding: 10px;
-  padding-bottom: 0;
+#homeContent {
+  position: relative;
+  top: 25%;
+  max-width: 75vw;
+  display: inline-block
+}
+#homeTitle {
+  font-size: 80px;
+}
+#homeIntro {
+  font-size: 28px;
+  padding: 18px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0 ,0, 0.2)
+}
+#aboutContent {
+  max-width: 75vw;
+  text-align: center;
+  display: inline-block;
 }
 #headshot {
   width: 150px;
   height: auto;
   border-radius: 50%;
+}
+#contactTitle {
+  padding: 10px;
+  padding-bottom: 0;
 }
