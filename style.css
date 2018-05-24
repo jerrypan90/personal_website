@@ -130,3 +130,6 @@ i.fa.fa-envelope-o {
     color: white;
     margin-right: 10px;
 }
+#contactLink i:hover {
+  color: rgb(45, 157, 172);
+}
