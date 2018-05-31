@@ -145,8 +145,11 @@ i.fa.fa-envelope-o {
     #homeIntro {
         font-size: 24px;
     }
-    #about h1 {
+    /* #about h1 {
         font-size: 20px;
+    } */
+    #about {
+      height: 100%;
     }
     #about * {
         margin: 5px;
