@@ -104,6 +104,11 @@ body {
   font-weight: 700;
   margin: 5px 0;
 }
+#projectContent a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 #contact {
   height: 15vh;
   width: 100vw;
@@ -132,4 +137,28 @@ i.fa.fa-envelope-o {
 }
 #contactLink i:hover {
   color: rgb(45, 157, 172);
+}
+@media screen and (max-width: 585px) {
+    #homeTitle {
+        font-size: 60px;
+    }
+    #homeIntro {
+        font-size: 24px;
+    }
+    #about h1 {
+        font-size: 20px;
+    }
+    #about * {
+        margin: 5px;
+    }
+    #about h1 {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    #about h3 {
+        font-size: 20px;
+    }
+    #project {
+        height: 100%;
+    }
 }
