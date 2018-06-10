@@ -1,88 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Jerry Pan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Jerry Pan</title>
 </head>
 <body>
-  <!-- <div class="home"> -->
-  <div class="section" id="home">
-    <!-- <div id="homeContent"> -->
-    <div class="sectionWrapper" id="homeContent">
-      <h1 class="title" id="homeTitle">Jerry Pan</h1>
-      <p id="homeIntro">I'm a Singapore based full-stack web developer with user experience background. I code based on what my users want than what I am capable of. Do read on to find out more about me.</p>
-    </div>
-  </div>
+   <div id="particles-js">
+      <div id="homeContentDiv">
+         <!-- Top Navigation -->
+         <div id="topNav">
+            <img id="navHome" src="asset/jp.png" alt="logo">
+            <p id="navToggleProject">Projects</p>
+            <p id="navToggleAbout">About</p>
+            <a href="mailto:jerrypan_90@hotmail.com"><i class="fa fa-envelope-o"></i></a>
+            <a href="https://www.linkedin.com/in/jerryplx" target="blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.github.com/jerrypan90" target="blank"><i class="fa fa-github"></i></a>
+         </div>
 
-  <!-- <div class="about"> -->
-  <div class="section" id="about">
-    <!-- <div id="aboutContent"> -->
-    <div class="sectionWrapper" id="aboutContent">
-      <img id="headshot" src="asset/headshot.png" alt="headshot" />
-      <h1>About Myself</h1>
-      <p>From a user who interact with tons of code written by other developers to writing codes for users, the similarity is that
-      both are enjoyable. The difference however is that the latter brings about greater satisfaction when knowing your codes are
-      making a difference in people's life. These are my motivations today.</p>
-      <h1>Skills</h1>
-      <h3>Languages</h3>
-      <p>HTML | CSS | Javascript | Ruby</p>
-      <h3>Databases</h3>
-      <p>PostgreSQL | MongoDB</p>
-      <h3>Frameworks & Libraries</h3>
-      <p>NodeJS | Express | Rails | React</p>
-      <h3>Deployment</h3>
-      <p>Git | Heroku</p>
-    </div>
-  </div>
+         <!-- Main -->
+         <div id="homeSpaceDiv"></div>
+         <img id="headshot" src="asset/headshot.png" alt="headshot" />
+         <h1 id="homeTitle">Hi. I am Jerry.</h1>
+         <h1 id="homeTitle">A Singapore based Full-stack Web Developer</h1>
+         <h2 id="homeTitle">with background in</h2>
+         <h1 id="homeTitle">User Experience and Marketing</h1>
 
-  <!-- <div class="project"> -->
-  <div class="section" id="project">
-    <div class"sectionWrapper" id="projectContent">
-      <h1 class="title" id="projectTitle">My Portfolio</h1>
-      <a href="https://jerrypan90.github.io/project1_snakeGame/" target="blank">
-        <div class="container">
-          <img src="asset/znake.jpeg" alt="Znake Game" />
-          <p id="cover">HTML | CSS | Javascript</p>
-          <p>Znake Game</p>
-        </div>
-      </a>
-      <a href="https://gentle-cliffs-18815.herokuapp.com/" target="blank">
-        <div class="container">
-          <img src="asset/proZallet.jpeg" alt="ProZallet" />
-          <p id="cover">NodeJS | Express | PostgreSQL</p>
-          <p>ProZallet</p>
-        </div>
-      </a>
-      <a href="https://jerrypan90.github.io/iWed/" target="blank">
-        <div class="container">
-          <img src="asset/iWed.jpeg" alt="iWed" />
-          <p id="cover">Ruby on Rails</p>
-          <p>iWed</p>
-        </div>
-      </a>
-      <a href="https://jerrypan90.github.io/playRoam/" target="blank">
-        <div class="container">
-          <img src="asset/playRoam.jpeg" alt="PlayRoam" />
-          <p id="cover">React | Ruby on Rails</p>
-          <p>PlayRoam</p>
-        </div>
-      </a>
-    </div>
-  </div>
+         <!-- Project -->
+         <p id="toggleProject">Projects</p>
+         <div id="projectDiv" style="width: 0vw;">
+            <p id="toggleHomeFromProject">Home</p>
+            <div id="projectContentDiv">
+               <div id="projectLeft">
+                  <a href="https://jerrypan90.github.io/project1_snakeGame/" target="blank">
+                     <div class="container">
+                        <img src="asset/znake.jpeg" alt="Znake Game" />
+                        <p>Znake Game</p>
+                        <div class="cover">
+                           <div></div>
+                           <h2 class="titleCover">Znake Game</h2>
+                           <div></div>
+                           <h3 class="footerCover">HTML | CSS | Javascript</h3>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="https://gentle-cliffs-18815.herokuapp.com/" target="blank">
+                     <div class="container">
+                        <img src="asset/proZallet.jpeg" alt="ProZallet" />
+                        <p>Pro Zallet</p>
+                        <div class="cover">
+                           <div></div>
+                           <h2 class="titleCover">Pro Zallet</h2>
+                           <div></div>
+                           <h3 class="footerCover">NodeJS | Express | PostgreSQL | Heroku</p>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="https://jerrypan90.github.io/playRoam/" target="blank">
+                     <div class="container">
+                        <img src="asset/playRoam.jpeg" alt="PlayRoam" />
+                        <p>PlayRoam</p>
+                        <div class="cover">
+                           <div></div>
+                           <h2 class="titleCover">Play Roam</h2>
+                           <div></div>
+                           <h3 class="footerCover">React | Ruby on Rails | Git | Heroku</h3>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div id="projectRight">
+                  <img src="asset/left_p.png" alt="p" />
+                  <img src="asset/right_r.png" alt="r" />
+                  <img src="asset/left_o.png" alt="o" />
+                  <img src="asset/right_j.png" alt="j" />
+                  <img src="asset/left_e.png" alt="e" />
+                  <img src="asset/right_c.png" alt="c" />
+                  <img src="asset/left_t.png" alt="t" />
+               </div>
+            </div>
+         </div>
+         
+         <!-- About -->
+         <p id="toggleAbout">About</p>
+         <div id="aboutDiv" style="width: 0vw;">
+            <p id="toggleHomeFromAbout">Home</p>
+            <div id="aboutContentDiv">
+               <div id="aboutLeft">
+                  <img src="asset/about.jpg" alt="black&white" />
+                  <h2>Hi.</h2>
+                  <h2>I am Jerry</h2>
+               </div>
+               <div id="aboutRight">
+                  <p>From a user who interact with tons of code written by other developers to writing codes for users, the similarity is that
+                     both are <u>enjoyable</u>. The difference however is that the latter brings about greater satisfaction when knowing your codes
+                     are making a <u>difference in people's life</u>. Hence, I seek to <u>constantly upgrade</u> my skills to fulfil my users' expectations.</p>
+                  <h3>Languages</h3>
+                  <p>HTML | CSS | Javascript | Ruby</p>
+                  <h3>Databases</h3>
+                  <p>PostgreSQL | MongoDB</p>
+                  <h3>Frameworks & Libraries</h3>
+                  <p>NodeJS | Express | Rails | React</p>
+                  <h3>Deployment</h3>
+                  <p>Git | Heroku</p>
+               </div>
+            </div> 
+         </div>
 
-  <div id="contact">
-    <h1 class="title" id="contactTitle">Contact Me</h1>
-    <div id="contactLink">
-      <a href="mailto:jerrypan_90@hotmail.com"><i class="fa fa-envelope-o"></i></a>
-      <a href="https://www.linkedin.com/in/jerryplx" target="blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.github.com/jerrypan90" target="blank"><i class="fa fa-github"></i></a>
-    </div>
-  </div>
+         <!-- Contact -->
+         <div id="contactWrapper">
+            <div id="contactDiv" style="height: 8vh;">
+               <p id="toggleContact">Contact</p>
+               <a href="mailto:jerrypan_90@hotmail.com"><i class="fa fa-envelope-o"></i></a>
+               <a href="https://www.linkedin.com/in/jerryplx" target="blank"><i class="fa fa-linkedin"></i></a>
+               <a href="https://www.github.com/jerrypan90" target="blank"><i class="fa fa-github"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
 
+   <script type="text/javascript" src="script/particles.js"></script>
+   <script type="text/javascript" src="script/app.js"></script>
+   <script type="text/javascript" src="script/index.js"></script>
 </body>
 </html>
