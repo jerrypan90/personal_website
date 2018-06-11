@@ -15,9 +15,9 @@
       <div id="homeContentDiv">
          <!-- Top Navigation -->
          <div id="topNav">
-            <img onclick="" id="navHome" src="asset/jp.png" alt="logo">
-            <p onclick="document.getElementById('aboutDiv').style.width = '100vw'" id="navToggleProject">Projects</p>
-            <p onclick="document.getElementById('projectDiv').style.width = '100vw'" id="navToggleAbout">About</p>
+            <img onclick="document.getElementById('projectDiv').style.width ='0vw';document.getElementById('aboutDiv').style.width='0vw'" id="navHome" src="asset/jp.png" alt="logo">
+            <p onclick="document.getElementById('projectDiv').style.width='100vw'" id="navToggleProject">Projects</p>
+            <p onclick="document.getElementById('aboutDiv').style.width='100vw'" id="navToggleAbout">About</p>
             <a href="mailto:jerrypan_90@hotmail.com"><i class="fa fa-envelope-o"></i></a>
             <a href="https://www.linkedin.com/in/jerryplx" target="blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://www.github.com/jerrypan90" target="blank"><i class="fa fa-github"></i></a>
@@ -34,7 +34,7 @@
          <!-- Project -->
          <p id="toggleProject">Projects</p>
          <div id="projectDiv" style="width: 0vw;">
-            <p id="toggleHomeFromProject">Home</p>
+            <p onclick="document.getElementById('projectDiv').style.width='0vw'" id="toggleHomeFromProject">Home</p>
             <div id="projectContentDiv">
                <div id="projectLeft">
                   <a href="https://jerrypan90.github.io/project1_snakeGame/" target="blank">
@@ -89,7 +89,7 @@
          <!-- About -->
          <p id="toggleAbout">About</p>
          <div id="aboutDiv" style="width: 0vw;">
-            <p id="toggleHomeFromAbout">Home</p>
+            <p onclick="document.getElementById('aboutDiv').style.width='0vw'" id="toggleHomeFromAbout">Home</p>
             <div id="aboutContentDiv">
                <div id="aboutLeft">
                   <img src="asset/about.jpg" alt="black&white" />
@@ -115,7 +115,7 @@
          <!-- Contact -->
          <div id="contactWrapper">
             <div id="contactDiv" style="height: 8vh;">
-               <p id="toggleContact">Contact</p>
+            <p onclick="if(document.getElementById('contactDiv').style.width='8vw'){document.getElementById('contactDiv').style.width='20vw'}else{document.getElementById('contactDiv').style.width='8vw'}" id="toggleContact">Contact</p>
                <a href="mailto:jerrypan_90@hotmail.com"><i class="fa fa-envelope-o"></i></a>
                <a href="https://www.linkedin.com/in/jerryplx" target="blank"><i class="fa fa-linkedin"></i></a>
                <a href="https://www.github.com/jerrypan90" target="blank"><i class="fa fa-github"></i></a>
