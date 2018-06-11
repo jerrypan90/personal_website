@@ -10,11 +10,17 @@ let aboutDiv = document.getElementById('aboutDiv');
 let projectDiv = document.getElementById('projectDiv');
 
 //Home Button
-navHome.addEventListener('click', function (e) {
+// navHome.addEventListener('click', function (e) {
+//    aboutDiv.style.width = '0vw';
+//    projectDiv.style.width = '0vw';
+//    contactDiv.style.height = '8vh';
+// })
+
+function goHome() {
    aboutDiv.style.width = '0vw';
    projectDiv.style.width = '0vw';
    contactDiv.style.height = '8vh';
-})
+}
 
 //Open Contact Details
 // toggleContact.addEventListener('click', function (e) {
@@ -25,13 +31,21 @@ navHome.addEventListener('click', function (e) {
 //    }
 // })
 
-document.getElementById('toggleContact').onclick = function () {
-   if(contactDiv.style.height === '8vh') {
+// document.getElementById('toggleContact').onclick = function () {
+//    if(contactDiv.style.height === '8vh') {
+//       contactDiv.style.height = '20vh';
+//    }else {
+//       contactDiv.style.height = '8vh';
+//    }
+//    return false;
+// }
+
+function activateContact() {
+   if (contactDiv.style.height === '8vh') {
       contactDiv.style.height = '20vh';
-   }else {
+   } else {
       contactDiv.style.height = '8vh';
    }
-   return false;
 }
 
 //Open About Section
