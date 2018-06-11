@@ -10,40 +10,50 @@ let aboutDiv = document.getElementById('aboutDiv');
 let projectDiv = document.getElementById('projectDiv');
 
 //Home Button
-navHome.addEventListener('touchstart', function (e) {
+navHome.addEventListener('click', function (e) {
    aboutDiv.style.width = '0vw';
    projectDiv.style.width = '0vw';
+   contactDiv.style.height = '8vh';
 })
 
 //Open Contact Details
-toggleContact.addEventListener('touchstart', function (e) {
-   if (contactDiv.style.height === '8vh') {
+// toggleContact.addEventListener('click', function (e) {
+//    if (contactDiv.style.height === '8vh') {
+//       contactDiv.style.height = '20vh';
+//    } else {
+//       contactDiv.style.height = '8vh';
+//    }
+// })
+
+document.getElementById('toggleContact').onclick = function () {
+   if(contactDiv.style.height === '8vh') {
       contactDiv.style.height = '20vh';
-   } else {
+   }else {
       contactDiv.style.height = '8vh';
    }
-})
+   return false;
+}
 
 //Open About Section
-toggleAbout.addEventListener('touchstart', function (e) {
+toggleAbout.addEventListener('click', function (e) {
    aboutDiv.style.width = '100vw';
 })
-navToggleAbout.addEventListener('touchstart', function (e) {
+navToggleAbout.addEventListener('click', function (e) {
    aboutDiv.style.width = '100vw';
 })
 //Close About Section
-toggleHomeFromAbout.addEventListener('touchstart', function (e) {
+toggleHomeFromAbout.addEventListener('click', function (e) {
    aboutDiv.style.width = '0';
 })
 
 //Open Project Section
-toggleProject.addEventListener('touchstart', function (e) {
+toggleProject.addEventListener('click', function (e) {
    projectDiv.style.width = '100vw';
 })
-navToggleProject.addEventListener('touchstart', function (e) {
+navToggleProject.addEventListener('click', function (e) {
    projectDiv.style.width = '100vw';
 })
 //Close Project Section
-toggleHomeFromProject.addEventListener('touchstart', function (e) {
+toggleHomeFromProject.addEventListener('click', function (e) {
    projectDiv.style.width = '0';
 })
