@@ -10,13 +10,13 @@ let aboutDiv = document.getElementById('aboutDiv');
 let projectDiv = document.getElementById('projectDiv');
 
 //Home Button
-navHome.addEventListener('mouseup', function (event) {
+navHome.addEventListener('touchstart', function (event) {
    aboutDiv.style.width = '0vw';
    projectDiv.style.width = '0vw';
 })
 
 //Open Contact Details
-toggleContact.addEventListener('mouseup', function (event) {
+toggleContact.addEventListener('touchstart', function (event) {
    if (contactDiv.style.height === '8vh') {
       contactDiv.style.height = '20vh';
    } else {
@@ -25,25 +25,25 @@ toggleContact.addEventListener('mouseup', function (event) {
 })
 
 //Open About Section
-toggleAbout.addEventListener('mouseup', function (event) {
+toggleAbout.addEventListener('touchstart', function (event) {
    aboutDiv.style.width = '100vw';
 })
-navToggleAbout.addEventListener('mouseup', function (event) {
+navToggleAbout.addEventListener('touchstart', function (event) {
    aboutDiv.style.width = '100vw';
 })
 //Close About Section
-toggleHomeFromAbout.addEventListener('mouseup', function (event) {
+toggleHomeFromAbout.addEventListener('touchstart', function (event) {
    aboutDiv.style.width = '0';
 })
 
 //Open Project Section
-toggleProject.addEventListener('mouseup', function (event) {
+toggleProject.addEventListener('touchstart', function (event) {
    projectDiv.style.width = '100vw';
 })
-navToggleProject.addEventListener('mouseup', function (event) {
+navToggleProject.addEventListener('touchstart', function (event) {
    projectDiv.style.width = '100vw';
 })
 //Close Project Section
-toggleHomeFromProject.addEventListener('mouseup', function (event) {
+toggleHomeFromProject.addEventListener('touchstart', function (event) {
    projectDiv.style.width = '0';
 })
