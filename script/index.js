@@ -16,11 +16,11 @@ let projectDiv = document.getElementById('projectDiv');
 //    contactDiv.style.height = '8vh';
 // })
 
-function goHome() {
-   aboutDiv.style.width = '0vw';
-   projectDiv.style.width = '0vw';
-   contactDiv.style.height = '8vh';
-}
+// function goHome() {
+//    aboutDiv.style.width = '0vw';
+//    projectDiv.style.width = '0vw';
+//    contactDiv.style.height = '8vh';
+// }
 
 //Open Contact Details
 // toggleContact.addEventListener('click', function (e) {
@@ -40,13 +40,13 @@ function goHome() {
 //    return false;
 // }
 
-function activateContact() {
-   if (contactDiv.style.height === '8vh') {
-      contactDiv.style.height = '20vh';
-   } else {
-      contactDiv.style.height = '8vh';
-   }
-}
+// function activateContact() {
+//    if (contactDiv.style.height === '8vh') {
+//       contactDiv.style.height = '20vh';
+//    } else {
+//       contactDiv.style.height = '8vh';
+//    }
+// }
 
 //Open About Section
 toggleAbout.addEventListener('click', function (e) {
