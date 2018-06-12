@@ -202,10 +202,10 @@
                }
             }                  
          } else {
-            if ( yDiff > 0 && aboutDiv.style.width === "0vw" && projectDiv.style.width === "0vw") {
+            if ( yDiff > 0 && aboutDiv.style.width === "0vw" && projectDiv.style.width === "0vw" ) {
                /* up swipe */ 
                contactDiv.style.height = "20vh";
-            } else { 
+            } else if (yDiff < 0 && contactDiv.style.height === "20vh" ) { 
                /* down swipe */
                contactDiv.style.height = "8vh";
             }                                                                 
