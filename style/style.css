@@ -616,38 +616,21 @@ body {
       width: 60vw;
    }
 }
-@media (max-width: 424px) {
-   #headshot {
-      width: 15.625em;
-   }
+@media (max-width: 424px) and (max-height: 628px) {
    #homeTitle {
       font-size: 20px;
    }
-   #aboutContentDiv {
-      margin-bottom: 500px;
-   }
-   #aboutLeft h2:nth-child(2) {
-      top: 29%;
-   }
-   #aboutLeft h2:nth-child(3) {
-      top: 35%;
-   }
-   #aboutRight *:not(u) {
-      margin: 0.625em 0.625em;
-   }
-   #projectContentDiv {
-      margin-bottom: 140px;
-   }
-}
-@media (max-width: 385px) {
-   #homeTitle {
-      font-size: 24px;
+   #toggleContact {
+      padding: 0.5em 0;
    }
    #aboutContentDiv {
-      margin-bottom: 650px;
+      margin-bottom: 550px;
+   }
+   #aboutLeft {
+      margin-bottom: 40px;
    }
    #aboutLeft img {
-      width: 80vw;
+      width: 70vw;
    }
    #aboutLeft h2:nth-child(2) {
       top: 36%;
@@ -657,8 +640,28 @@ body {
       top: 42%;
       left: 9%;
    }
+   #aboutRight *:not(u) {
+      margin: 0.625em 0.625em;
+   }
+   #aboutRight p:nth-child(1) {
+      font-size: 22px;
+   }
+   #aboutRight h3 {
+      font-size: 24px;
+   }
+   #aboutRight h3+p {
+      font-size: 22px;
+   }
    #projectContentDiv {
-      margin-bottom: 100px;
+      margin-bottom: 250px;
+   }
+}
+@media (max-width: 385px) and (max-height: 559px) {
+   #homeTitle {
+      font-size: 1.188em;
+   }
+   #projectContentDiv {
+      margin-bottom: 210px;
    }
 }
 @media (max-width: 355px) {
@@ -669,289 +672,3 @@ body {
       font-size: 52px;
    }
 }
-/* @media only screen and (max-width: 599px) {
-   #toggleAbout,
-   #toggleProject {
-      display: none;
-   }
-   #topNav p {
-      display: inline-block;
-      margin: 23px 8px;
-   }
-   #topNav i.fa.fa-envelope-o,
-   #topNav i.fa.fa-linkedin,
-   #topNav i.fa.fa-github {
-      display: none;
-   }
-   #headshot {
-      width: 200px;
-      height: auto;
-      border-radius: 50%;
-      border: 4px solid white;
-   }
-   #homeTitle {
-      margin: 3px 0;
-      font-size: 19px;
-   }
-   #homeContentDiv {
-      overflow: auto;
-   }
-   #toggleContact {
-      padding-top: 12px;
-      padding-bottom: 17px;
-   }
-   #contactWrapper {
-      position: fixed;
-   }
-   #aboutDiv {
-      height: 100%;
-      padding-bottom: 300px;
-   }
-   #aboutContentDiv {
-      flex-direction: column;
-      top: 3%;
-      left: 17.5%;
-   }
-   #aboutLeft {
-      width: 65vw;
-   }
-   #aboutLeft img {
-      padding-bottom: 45px;
-   }
-   #aboutLeft h2:nth-child(2) {
-      font-size: 60px;
-      bottom: 15%;
-      left: 0;
-   }
-   #aboutLeft h2:nth-child(3) {
-      font-size: 50px;
-      bottom: 5%;
-      left: 3%;
-   }
-   #aboutRight {
-      margin: 0;
-      width: 90vw;
-      height: 100vh;
-      position: absolute;
-      bottom: -215%;
-      left: -20%;
-   }
-   #aboutRight p:nth-child(1) {
-      text-align: center;
-   }
-   #projectDiv {
-      height: 100%;
-      padding-bottom: 360px;
-   }
-   #projectContentDiv {
-      right: 33%;
-   }
-   #projectRight {
-      display: none;
-   }
-   .container p {
-      display: inline-block;
-      width: 28vw;
-      margin: 0;
-      color: black;
-      margin-bottom: 15px;
-      font-size: 20px;
-   }
-}
-@media only screen and (max-width: 600px) {
-   #toggleAbout,
-   #toggleProject {
-      display: none;
-   }
-   #topNav p {
-      display: inline-block;
-      margin: 20px 15px;
-   }
-   #topNav i.fa.fa-envelope-o {
-      right: 13%;
-   }
-   #topNav i.fa.fa-linkedin {
-      right: 7.3%;
-   }
-   #topNav i.fa.fa-github {
-      right: 2%;
-   }
-   #headshot {
-      width: 170px;
-      height: auto;
-      border-radius: 50%;
-      border: 4px solid white;
-   }
-   #homeTitle {
-      margin: 3px 0;
-      font-size: 24px;
-   }
-   #homeContentDiv {
-      overflow: auto;
-   }
-   #toggleContact {
-      padding-top: 12px;
-      padding-bottom: 17px;
-   }
-   #contactWrapper {
-      position: fixed;
-   }
-   #aboutDiv {
-      height: 100%;
-      padding-bottom: 450px;
-   }
-   #aboutContentDiv {
-      flex-direction: column;
-      top: 3%;
-      left: 17.5%;
-   }
-   #aboutLeft {
-      width: 65vw;
-   }
-   #aboutLeft img {
-      padding-bottom: 70px;
-   }
-   #aboutLeft h2:nth-child(2) {
-      bottom: 30%;
-      left: 0;
-   }
-   #aboutLeft h2:nth-child(3) {
-      bottom: 20%;
-      left: 2%;
-   }
-   #aboutRight {
-      margin: 0;
-      width: 65vw;
-   }
-   #aboutRight p:nth-child(1) {
-      text-align: center;
-   }
-   #projectDiv {
-      height: 100%;
-      padding-bottom: 350px;
-   }
-   #projectContentDiv {
-      right: 25%;
-   }
-   #projectRight {
-      display: none;
-   }
-   .container p {
-      display: inline-block;
-      width: 28vw;
-      margin: 0;
-      color: black;
-      margin-bottom: 15px;
-      font-size: 20px;
-   }
-} */
-/* @media only screen and (max-width: 768px) {
-   #toggleAbout,
-   #toggleProject {
-      display: none;
-   }
-   #topNav p {
-      display: inline-block;
-   }
-   #aboutContentDiv {
-      left: 10%;
-   }
-   #aboutLeft h2 {
-      font-size: 60px;
-   }
-   #aboutLeft h2:nth-child(2) {
-      bottom: 34%;
-      left: 0;
-   }
-   #aboutLeft h2:nth-child(3) {
-      bottom: 20%;
-      left: 2%;
-   }
-   #aboutRight {
-      margin-left: 3vw;
-   }
-   #aboutRight *:not(u) {
-      margin: 0 0 10px 0;
-   }
-   #projectContentDiv {
-      right: 5%;
-      top: 15%;
-   }
-   #projectRight {
-      display: none;
-   }
-   #projectLeft {
-      width: 90vw;
-   }
-   #projectLeft img {
-      height: 210px;
-      width: 210px;
-      margin: 0 5px;
-   }
-   .cover {
-      display: none;
-   }
-   .container {
-      width: 28vw;
-   }
-   .container p {
-      display: inline-block;
-      width: 28vw;
-      margin: 0;
-      color: black;
-   }
-   #toggleContact {
-      padding-top: 12px;
-      padding-bottom: 17px;
-   }
-}
-@media only screen and (max-width: 992px) {
-   #aboutLeft h2:nth-child(2) {
-      bottom: 24%;
-      left: 0;
-   }
-   #aboutLeft h2:nth-child(3) {
-      bottom: 10%;
-      left: 2%;
-   }
-   #projectContentDiv {
-      top: 10%;
-   }
-   #projectRight img {
-      height: 24%;
-      width: 11%;
-      position: absolute;
-   }
-   #projectRight img:nth-child(1) {
-      top: 8%;
-      right: 34%;
-   }
-   #projectRight img:nth-child(2) {
-      top: 20%;
-      right: 28%;
-   }
-   #projectRight img:nth-child(3) {
-      top: 32%;
-      right: 22%;
-   }
-   #projectRight img:nth-child(4) {
-      top: 44%;
-      right: 16%;
-   }
-   #projectRight img:nth-child(5) {
-      top: 56%;
-      right: 10%;
-   }
-   #projectRight img:nth-child(6) {
-      top: 68%;
-      right: 4%;
-   }
-   #projectRight img:nth-child(7) {
-      top: 80%;
-      right: -2%;
-   }
-   #projectLeft img, .cover {
-      height: 240px;
-      width: 240px;
-   }
-} */
