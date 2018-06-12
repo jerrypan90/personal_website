@@ -11,27 +11,3 @@ let toggleHomeFromProject = document.getElementById('toggleHomeFromProject');
 let contactDiv = document.getElementById('contactDiv');
 let aboutDiv = document.getElementById('aboutDiv');
 let projectDiv = document.getElementById('projectDiv');
-
-//Open About Section
-toggleAbout.addEventListener('click', function (e) {
-   aboutDiv.style.width = '100vw';
-})
-navToggleAbout.addEventListener('click', function (e) {
-   aboutDiv.style.width = '100vw';
-})
-//Close About Section
-toggleHomeFromAbout.addEventListener('click', function (e) {
-   aboutDiv.style.width = '0';
-})
-
-//Open Project Section
-toggleProject.addEventListener('click', function (e) {
-   projectDiv.style.width = '100vw';
-})
-navToggleProject.addEventListener('click', function (e) {
-   projectDiv.style.width = '100vw';
-})
-//Close Project Section
-toggleHomeFromProject.addEventListener('click', function (e) {
-   projectDiv.style.width = '0';
-})

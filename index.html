@@ -16,8 +16,8 @@
          <!-- Top Navigation -->
          <div id="topNav">
             <img onclick="goHome()" id="navHome" src="asset/jp.png" alt="logo">
-            <p onclick="document.getElementById('projectDiv').style.width='100vw'" id="navToggleProject">Projects</p>
-            <p onclick="document.getElementById('aboutDiv').style.width='100vw'" id="navToggleAbout">About</p>
+            <p onclick="openProject()" id="navToggleProject">Projects</p>
+            <p onclick="openAbout()" id="navToggleAbout">About</p>
             <a href="mailto:jerrypan_90@hotmail.com"><i class="fa fa-envelope-o"></i></a>
             <a href="https://www.linkedin.com/in/jerryplx" target="blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://www.github.com/jerrypan90" target="blank"><i class="fa fa-github"></i></a>
@@ -32,9 +32,9 @@
          <h1 id="homeTitle">User Experience and Marketing</h1>
 
          <!-- Project -->
-         <p id="toggleProject">Projects</p>
+         <p onclick="openProject()" id="toggleProject">Projects</p>
          <div id="projectDiv" style="width: 0vw;">
-            <p onclick="document.getElementById('projectDiv').style.width='0vw'" id="toggleHomeFromProject">Home</p>
+            <p onclick="closeProject()" id="toggleHomeFromProject">Home</p>
             <div id="projectContentDiv">
                <div id="projectLeft">
                   <a href="https://jerrypan90.github.io/project1_snakeGame/" target="blank">
@@ -87,9 +87,9 @@
          </div>
          
          <!-- About -->
-         <p id="toggleAbout">About</p>
+         <p onclick="openAbout()" id="toggleAbout">About</p>
          <div id="aboutDiv" style="width: 0vw;">
-            <p onclick="document.getElementById('aboutDiv').style.width='0vw'" id="toggleHomeFromAbout">Home</p>
+            <p onclick="closeAbout()" id="toggleHomeFromAbout">Home</p>
             <div id="aboutContentDiv">
                <div id="aboutLeft">
                   <img src="asset/about.jpg" alt="black&white" />
@@ -133,7 +133,6 @@
          projectDiv.style.width = '0vw'; 
          contactDiv.style.height = '8vh'; 
       }
-
       function activateContact() {
          if (contactDiv.style.height === '8vh') {
             contactDiv.style.height = '20vh';
@@ -141,6 +140,70 @@
             contactDiv.style.height = '8vh';
          }
       }
+      function openAbout() {
+         aboutDiv.style.width = '100vw';
+      }
+      function closeAbout() {
+         aboutDiv.style.width = '0vw';
+      }
+      function openProject() {
+         projectDiv.style.width = '100vw';
+      }
+      function closeProject() {
+         projectDiv.style.width = '0vw';
+      }
+
+      document.addEventListener('touchstart', handleTouchStart, false);        
+      document.addEventListener('touchmove', handleTouchMove, false);
+
+      var xDown = null;                                                        
+      var yDown = null;                                                        
+
+      function handleTouchStart(evt) {                                         
+         xDown = evt.touches[0].clientX;                                      
+         yDown = evt.touches[0].clientY;                                      
+      };
+
+      function handleTouchMove(evt) {
+         if ( ! xDown || ! yDown ) {
+            return;
+         }
+
+         var xUp = evt.touches[0].clientX;                                    
+         var yUp = evt.touches[0].clientY;
+
+         var xDiff = xDown - xUp;
+         var yDiff = yDown - yUp;
+
+         if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+            if ( xDiff > 0 ) {
+               /* left swipe */
+               if(projectDiv.style.width === "0vw") {
+                  openAbout();
+               } else {
+                  closeProject();
+               }
+            } else {
+               /* right swipe */
+               if(aboutDiv.style.width === "0vw") {
+                  openProject();
+               } else {
+                  closeAbout();
+               }
+            }                  
+         } else {
+            if ( yDiff > 0 && aboutDiv.style.width === "0vw" && projectDiv.style.width === "0vw") {
+               /* up swipe */ 
+               contactDiv.style.height = "20vh";
+            } else { 
+               /* down swipe */
+               contactDiv.style.height = "8vh";
+            }                                                                 
+         }
+         /* reset values */
+         xDown = null;
+         yDown = null;                                             
+      };
    </script>
 </body>
 </html>
