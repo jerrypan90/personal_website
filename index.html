@@ -32,7 +32,7 @@
          <h1 id="homeTitle">User Experience and Marketing</h1>
 
          <!-- Project -->
-         <p onclick="openProject()" id="toggleProject">Projects</p>
+         <p onclick="desktopOpenProject()" id="toggleProject">Projects</p>
          <div id="projectDiv" style="width: 0vw;">
             <p onclick="closeProject()" id="toggleHomeFromProject">Home</p>
             <div id="projectContentDiv">
@@ -87,7 +87,7 @@
          </div>
          
          <!-- About -->
-         <p onclick="openAbout()" id="toggleAbout">About</p>
+         <p onclick="desktopOpenAbout()" id="toggleAbout">About</p>
          <div id="aboutDiv" style="width: 0vw;">
             <p onclick="closeAbout()" id="toggleHomeFromAbout">Home</p>
             <div id="aboutContentDiv">
@@ -142,15 +142,25 @@
       }
       function openAbout() {
          aboutDiv.style.width = '100vw';
+         contactDiv.style.height = '0vh'
+      }
+      function desktopOpenAbout() {
+         aboutDiv.style.width = '100vw';
       }
       function closeAbout() {
          aboutDiv.style.width = '0vw';
+         contactDiv.style.height = '8vh'
       }
       function openProject() {
+         projectDiv.style.width = '100vw';
+         contactDiv.style.height = '0vh'
+      }
+      function desktopOpenProject() {
          projectDiv.style.width = '100vw';
       }
       function closeProject() {
          projectDiv.style.width = '0vw';
+         contactDiv.style.height = '8vh'
       }
 
       document.addEventListener('touchstart', handleTouchStart, false);        
