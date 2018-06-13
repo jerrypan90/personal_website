@@ -635,8 +635,8 @@ body {
       padding: 0.5em 0;
    }
    #aboutContentDiv {
-      /* margin-bottom: 550px; */
-      padding-bottom: 50vh;
+      margin-bottom: 0;
+      padding-bottom: 0;
    }
    #aboutLeft {
       margin-bottom: 40px;
@@ -665,8 +665,8 @@ body {
       font-size: 22px;
    }
    #projectContentDiv {
-      /* margin-bottom: 250px; */
-      padding-bottom: 70vh;
+      margin-bottom: 0;
+      padding-bottom: 0;
    }
 }
 @media only screen and (max-width: 385px) and (max-height: 559px) {
