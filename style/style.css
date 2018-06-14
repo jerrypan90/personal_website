@@ -75,13 +75,20 @@ body {
 /* ==================================== */
 /* About Section */
 /* ==================================== */
-#toggleAbout {
-   transform: rotate(90deg);
+#arrowToggleAbout i.fa.fa-angle-double-left {
    position: absolute;
-   right: 0;
+   right: 2vw;
    top: 45vh;
-   font-size: 1.375em;
    cursor: pointer;
+   font-size: 70px;
+   min-width: 8%;
+   min-height: 8%;
+   animation: slideLeft 2s ease-in-out infinite;
+}
+@keyframes slideLeft {
+   0%,
+   100% { transform: translate(2vw, 0)}
+   50% { transform: translate(0, 0)}
 }
 /* Main Div */
 #aboutDiv {
@@ -97,13 +104,12 @@ body {
    -webkit-transition: 1s;
 }
 /* Return Home Button */
-#toggleHomeFromAbout {
-   transform: rotate(-90deg);
+#arrowHomeFromAbout {
    position: absolute;
    left: 0;
    top: 35vh;
-   font-size: 1.375em;
    cursor: pointer;
+   font-size: 70px;
 }
 /* Second Div - consist of left and right div */
 #aboutContentDiv {
@@ -173,13 +179,20 @@ body {
 /* ==================================== */
 /* Project Section */
 /* ==================================== */
-#toggleProject {
-   transform: rotate(-90deg);
+#arrowToggleProject i.fa.fa-angle-double-right {
    position: absolute;
    left: 0;
    top: 45vh;
-   font-size: 1.375em;
    cursor: pointer;
+   font-size: 70px;
+   min-width: 8%;
+   min-height: 8%;
+   animation: slideRight 2s ease-in-out infinite;
+}
+@keyframes slideRight {
+   0%,
+   100% { transform: translate(0, 0)}
+   50% { transform: translate(2vw, 0)}
 }
 /* Main Div */
 #projectDiv {
@@ -193,14 +206,13 @@ body {
    z-index: 1;
 }
 /* Return Home Button */
-#toggleHomeFromProject {
-   transform: rotate(90deg);
+#arrowHomeFromProject {
    position: absolute;
    right: 0;
    top: 35vh;
-   font-size: 1.375em;
-   z-index: 2;
    cursor: pointer;
+   font-size: 70px;
+   z-index: 2;
 }
 /* Second Div - consist of left and right*/
 #projectContentDiv {
